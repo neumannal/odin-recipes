@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 .header-main,
 .header-secondary,
 .header-tertiary {
@@ -5,22 +15,34 @@
     text-align: center;
 }
 
+body {
+    background: rgb(183, 203, 240);
+    width: 600px;
+    margin: auto;
+}
+
 img {
     height: 300px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    background-color: azure;
+    padding: 8px;
 }
 
 .anecdote {
     font-style: italic;
+    text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-ul li {
-    font-size: small;
+li {
+    font-size: 16px;
 }
 
-ol li {
-    font-size: large;
+.ingredients,
+.instructions {
+    background-color: honeydew;
+    padding: 8px;
+    margin: 16px 8px;
+
 }
